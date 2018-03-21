@@ -1,0 +1,27 @@
+{
+  "extends": "airbnb-base",
+  "rules": {
+    "arrow-body-style": [
+      "error",
+      "always"
+    ],
+    "max-len": "off",
+    "guard-for-in": 0,
+    "import/no-dynamic-require": 1,
+    "import/no-mutable-exports": 1,
+    "import/prefer-default-export": 0,
+    "no-console": 0,
+    "no-empty-function": 0,
+    "no-underscore-dangle": "off",
+    "camelcase": "off",
+    "no-param-reassign": [
+      2,
+      {
+        "props": false
+      }
+    ],
+    "no-restricted-syntax": 1,
+    "no-unused-vars": 1,
+    "object-curly-spacing": 0
+  }
+}

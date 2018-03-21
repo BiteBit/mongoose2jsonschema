@@ -1,0 +1,162 @@
+{
+  "type": "object",
+  "required": [
+    "idx"
+  ],
+  "properties": {
+    "idx": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string",
+      "default": "your name"
+    },
+    "binary": {
+      "type": "string",
+      "format": "binary"
+    },
+    "living": {
+      "type": "boolean"
+    },
+    "object": {
+      "type": "object"
+    },
+    "updated": {
+      "type": "string",
+      "format": "date-time",
+      "default": 1521629928743
+    },
+    "age": {
+      "type": "number",
+      "minimum": 18,
+      "maximum": 65
+    },
+    "mixed": {
+      "type": "object"
+    },
+    "_someId": {
+      "type": "string",
+      "pattern": "^[0-9a-fA-F]{24}$"
+    },
+    "decimal": {
+      "type": "number"
+    },
+    "array": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "ofString": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "ofNumber": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      }
+    },
+    "ofDates": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "date-time"
+      }
+    },
+    "ofBuffer": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "binary"
+      }
+    },
+    "ofBoolean": {
+      "type": "array",
+      "items": {
+        "type": "boolean"
+      }
+    },
+    "ofObject": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "sex": {
+            "type": "boolean"
+          },
+          "_id": {
+            "type": "string",
+            "pattern": "^[0-9a-fA-F]{24}$"
+          }
+        }
+      }
+    },
+    "ofMixed": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "ofObjectId": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[0-9a-fA-F]{24}$"
+      }
+    },
+    "ofArrays": {
+      "type": "array",
+      "items": {
+        "type": "array",
+        "items": {
+          "type": "object"
+        }
+      }
+    },
+    "ofArrayOfNumbers": {
+      "type": "array",
+      "items": {
+        "type": "array",
+        "items": {
+          "type": "number"
+        }
+      }
+    },
+    "nested": {
+      "type": "object",
+      "properties": {
+        "stuff": {
+          "type": "string"
+        },
+        "stuffx": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "sex": {
+              "type": "boolean"
+            },
+            "arr": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "_id": {
+      "type": "string",
+      "pattern": "^[0-9a-fA-F]{24}$"
+    }
+  }
+}
